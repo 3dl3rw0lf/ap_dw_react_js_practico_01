@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Seguro No Pagamos Coop</title>
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Acerca de Nosotros</a></li>
+				<li><a href="#">Nuestros Servicios</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<form action="javascript:;" onsubmit="send(this)">
+			<div class="container">
+				<h2>Contacto</h2>
+				<div class="form-control">
+					<label for="name">Nombre</label>
+					<input id="name" name="name" type="text" required>
+				</div>
+				<div class="form-control">
+					<label for="lastName">Apellido</label>
+					<input id="lastName" name="lastName" type="text" required>
+				</div>
+				<div class="form-control">
+					<label for="du">Documento</label>
+					<input id="du" name="du" type="number" required>
+				</div>
+				<div class="form-control">
+					<label for="email">Email</label>
+					<input id="email" name="email" type="text" required>
+				</div>
+				<div class="form-control">
+					<label for="phone">Teléfono</label>
+					<input id="phone" name="phone" type="text" required>
+				</div>
+				<div class="form-control">
+					<label for="typeInsurance">Tipo de Seguro </label>
+					<select id="typeInsurance" name="typeInsurance" aria-placeholder="Tipo de seguro" required>
+						<option value="0">Elija un tipo de seguro</option>
+						<option value="500">Básico</option>
+						<option value="1000">Intermedio</option>
+						<option value="1500">Premiun</option>
+					</select>
+				</div>
+				<div class="form-control">
+					<label for="valueInsurance">Valor del seguro elegido</label>
+					<input id="valueInsurance" name="valueInsurance" type="text" value="" disabled>
+				</div>
+				<button type="submit" value="enviar">Enviar</button>
+			</div>
+		</form>
+	</main>
+	<footer>
+		<div class="">
+			<p>&copy; 2023 Seguro No Pagamos Cooperativa. Todos los derechos reservados.</p>
+			<p>Dirección: Calle Principal, Ciudad, País | Teléfono: +123 456 789 | Email:
+				info@seguronopagamoscooperativa.com.ar</p>
+		</div>
+	</footer>
+	<div class="theme-switch">
+		<button id="theme-toggle-btn">Cambiar Tema</button>
+	</div>
+</body>
+<!-- <script>
+	function send(){
+		console.log("Envio");
+	}
+</script> -->
+<script src="./assets/js/switch.js"></script>
+<script src="./assets/js/javascript.js"></script>
+
+</html>
