@@ -10,7 +10,6 @@ body {
 
 header {
     background-color: #007bff;
-    color: white;
     padding: 10px 0;
     text-align: center;
 }
@@ -28,6 +27,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    color: #fff;
 }
 
 main {

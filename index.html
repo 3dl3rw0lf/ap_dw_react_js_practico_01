@@ -8,12 +8,11 @@
 	<link rel="stylesheet" href="./assets/css/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
->
 </head>
 
 <body>
 	<header>
-		<nav>
+		<nav class="">
 			<ul>
 				<li><a href="#">Inicio</a></li>
 				<li><a href="#">Acerca de Nosotros</a></li>
@@ -49,15 +48,15 @@
 				<div class="form-control">
 					<label for="typeInsurance">Tipo de Seguro </label>
 					<select id="typeInsurance" name="typeInsurance" aria-placeholder="Tipo de seguro" required>
-						<option value="0">Elija un tipo de seguro</option>
-						<option value="500">Básico</option>
-						<option value="1000">Intermedio</option>
-						<option value="1500">Premiun</option>
+						<option value="">Elija un tipo de seguro</option>
+						<option value="basico">Básico</option>
+						<option value="intermedio">Intermedio</option>
+						<option value="premiun">Premiun</option>
 					</select>
 				</div>
-				<div class="form-control">
+				<div class="form-control ">
 					<label for="valueInsurance">Valor del seguro elegido</label>
-					<input id="valueInsurance" name="valueInsurance" type="text" value="" disabled>
+					<input class="text-light-emphasis" id="valueInsurance" name="valueInsurance" type="text" value="" disabled>
 				</div>
 				<button type="submit" value="enviar">Enviar</button>
 			</div>
